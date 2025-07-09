@@ -27,7 +27,7 @@ It is designed to demonstrate a complete **data analysis lifecycle**: data clean
 
 ## 📚 Dataset
 
-- **File:** [`netflix_titles.csv`](.notebooks/netflix_titles.csv)
+- **File:** [`netflix_titles.csv`](notebooks/netflix_titles.csv)
 - **Source:** Kaggle Netflix Titles dataset
 - **Fields Include:**
   - `title`, `type`, `director`, `cast`, `country`
@@ -40,7 +40,7 @@ This dataset captures Netflix’s available content as of 2021, including metada
 
 ## 🛠️ Data Preparation & Cleaning (Python)
 
-Notebook: [`cleaning_normalizing_analysis.ipynb`](./cleaning_normalizing_analysis.ipynb)
+Notebook: [`cleaning_normalizing_analysis.ipynb`](notebooks/cleaning_normalizing_analysis.ipynb)
 
 ### Key Cleaning Steps:
 
