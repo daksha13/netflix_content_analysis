@@ -27,7 +27,7 @@ It is designed to demonstrate a complete **data analysis lifecycle**: data clean
 
 ## 📚 Dataset
 
-- **File:** [`netflix_titles.csv`](notebooks/netflix_titles.csv)
+- **File:** [`netflix_titles.csv`](data/netflix_titles.csv)
 - **Source:** Kaggle Netflix Titles dataset
 - **Fields Include:**
   - `title`, `type`, `director`, `cast`, `country`
