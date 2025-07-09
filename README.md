@@ -171,8 +171,8 @@ Published link: [Tableau Public link](https://public.tableau.com/app/profile/dak
 Aspiring Data Analyst passionate about storytelling with data.\
 Experienced in Python, SQL, and BI tools.
 
-- [LinkedIn Profile](#)
-- [Tableau Public](#)
+- [LinkedIn Profile]([#](https://www.linkedin.com/in/dakshaverma823132/)
+- [Tableau Public]([#](https://public.tableau.com/app/profile/daksha.verma/viz/NetflixMoviesTVShows_17520529412840/Dashboard1)*
 - [GitHub Portfolio](#)
 
 ---
