@@ -144,7 +144,7 @@ All visuals and analysis logic are inside [`cleaning_normalizing_analysis.ipynb`
 
 Tableau file: [`Tableau Dashboard.twb`](./Tableau Dashboard.twb)
 
-Published link: *Add your Tableau Public link here*
+Published link: [Tableau Public link] (https://public.tableau.com/app/profile/daksha.verma/viz/NetflixMoviesTVShows_17520529412840/Dashboard1)*
 
 ### Dashboard Features:
 
