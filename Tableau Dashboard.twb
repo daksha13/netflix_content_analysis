@@ -1,0 +1,1902 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <_.fcp.PatternedLineMarks.true...PatternedLineMarks />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='netflix_titles' inline='true' name='federated.1lc4ecr07aixwo1cdso251gwgxl9' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='netflix_titles' name='textscan.1io6n8x1km96rj1076ht20ek0d41'>
+            <connection class='textscan' directory='D:/Folder/Data Analysis/ott' filename='netflix_titles.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1io6n8x1km96rj1076ht20ek0d41' name='netflix_titles.csv' table='[netflix_titles#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='string' name='show_id' ordinal='0' />
+            <column datatype='string' name='type' ordinal='1' />
+            <column datatype='string' name='title' ordinal='2' />
+            <column datatype='string' name='director' ordinal='3' />
+            <column datatype='string' name='cast' ordinal='4' />
+            <column datatype='string' name='country' ordinal='5' />
+            <column datatype='date' date-parse-format='MMMM dd, yyyy' name='date_added' ordinal='6' />
+            <column datatype='integer' name='release_year' ordinal='7' />
+            <column datatype='string' name='rating' ordinal='8' />
+            <column datatype='string' name='duration' ordinal='9' />
+            <column datatype='string' name='listed_in' ordinal='10' />
+            <column datatype='string' name='description' ordinal='11' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>show_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[show_id]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>show_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[netflix_titles.csv_72B8CDB50469405CAEF87762AB88B413]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[type]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>type</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[netflix_titles.csv_72B8CDB50469405CAEF87762AB88B413]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[netflix_titles.csv_72B8CDB50469405CAEF87762AB88B413]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>director</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[director]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>director</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[netflix_titles.csv_72B8CDB50469405CAEF87762AB88B413]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cast</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[cast]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>cast</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[netflix_titles.csv_72B8CDB50469405CAEF87762AB88B413]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[netflix_titles.csv_72B8CDB50469405CAEF87762AB88B413]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date_added</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[date_added]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>date_added</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[netflix_titles.csv_72B8CDB50469405CAEF87762AB88B413]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>release_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[release_year]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>release_year</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[netflix_titles.csv_72B8CDB50469405CAEF87762AB88B413]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rating</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[rating]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>rating</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[netflix_titles.csv_72B8CDB50469405CAEF87762AB88B413]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>duration</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[duration]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>duration</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[netflix_titles.csv_72B8CDB50469405CAEF87762AB88B413]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>listed_in</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[listed_in]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>listed_in</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[netflix_titles.csv_72B8CDB50469405CAEF87762AB88B413]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[description]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>description</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[netflix_titles.csv_72B8CDB50469405CAEF87762AB88B413]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='releasedYear' datatype='integer' name='[Calculation_853713633934471168]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='YEAR([date_added])' />
+      </column>
+      <column caption='durationMinutes' datatype='integer' name='[Calculation_853713633935028225]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='INT(SPLIT([duration], &quot; &quot;, 1))' />
+      </column>
+      <column caption='netflix_titles.csv' datatype='table' name='[__tableau_internal_object_id__].[netflix_titles.csv_72B8CDB50469405CAEF87762AB88B413]' role='measure' type='quantitative' />
+      <column caption='Cast' datatype='string' name='[cast]' role='dimension' type='nominal' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column aggregation='Count' caption='Date Added' datatype='date' datatype-customized='true' name='[date_added]' role='dimension' type='ordinal' />
+      <column caption='Description' datatype='string' name='[description]' role='dimension' type='nominal' />
+      <column caption='Director' datatype='string' name='[director]' role='dimension' type='nominal' />
+      <column caption='Duration' datatype='string' name='[duration]' role='dimension' type='nominal' />
+      <column caption='Listed In' datatype='string' name='[listed_in]' role='dimension' type='nominal' />
+      <column caption='Rating' datatype='string' name='[rating]' role='dimension' type='nominal' />
+      <column caption='Release Year' datatype='integer' name='[release_year]' role='dimension' type='quantitative' />
+      <column caption='Show Id' datatype='string' name='[show_id]' role='dimension' type='nominal' />
+      <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+      <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+      <column-instance column='[release_year]' derivation='None' name='[none:release_year:ok]' pivot='key' type='ordinal' />
+      <group caption='Action (Release Year)' hidden='true' name='[Action (Release Year)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:release_year:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Type)' hidden='true' name='[Action (Type)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[type]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Daksha/AppData/Local/Temp/TableauTemp/#TableauTemp_1xow0kd1jkvjeb17c2t7a1oniotc.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='07/09/2025 08:18:38 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table'>
+            <columns>
+              <column datatype='date' date-parse-format='MMMM dd, yyyy' name='date_added' />
+            </columns>
+          </relation>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>show_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[show_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>show_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>netflix_titles.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8807</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[netflix_titles.csv_72B8CDB50469405CAEF87762AB88B413]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>type</remote-alias>
+              <ordinal>1</ordinal>
+              <family>netflix_titles.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[netflix_titles.csv_72B8CDB50469405CAEF87762AB88B413]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>title</remote-alias>
+              <ordinal>2</ordinal>
+              <family>netflix_titles.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8807</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[netflix_titles.csv_72B8CDB50469405CAEF87762AB88B413]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>director</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[director]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>director</remote-alias>
+              <ordinal>3</ordinal>
+              <family>netflix_titles.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2641</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[netflix_titles.csv_72B8CDB50469405CAEF87762AB88B413]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cast</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[cast]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>cast</remote-alias>
+              <ordinal>4</ordinal>
+              <family>netflix_titles.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6225</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[netflix_titles.csv_72B8CDB50469405CAEF87762AB88B413]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>country</remote-alias>
+              <ordinal>5</ordinal>
+              <family>netflix_titles.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>408</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[netflix_titles.csv_72B8CDB50469405CAEF87762AB88B413]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>date_added</remote-name>
+              <remote-type>7</remote-type>
+              <local-name>[date_added]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>date_added</remote-alias>
+              <ordinal>6</ordinal>
+              <family>netflix_titles.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[netflix_titles.csv_72B8CDB50469405CAEF87762AB88B413]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>release_year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[release_year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>release_year</remote-alias>
+              <ordinal>7</ordinal>
+              <family>netflix_titles.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>85</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[netflix_titles.csv_72B8CDB50469405CAEF87762AB88B413]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rating</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[rating]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>rating</remote-alias>
+              <ordinal>8</ordinal>
+              <family>netflix_titles.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[netflix_titles.csv_72B8CDB50469405CAEF87762AB88B413]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>duration</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[duration]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>duration</remote-alias>
+              <ordinal>9</ordinal>
+              <family>netflix_titles.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>216</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[netflix_titles.csv_72B8CDB50469405CAEF87762AB88B413]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>listed_in</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[listed_in]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>listed_in</remote-alias>
+              <ordinal>10</ordinal>
+              <family>netflix_titles.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>466</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[netflix_titles.csv_72B8CDB50469405CAEF87762AB88B413]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>description</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[description]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>description</remote-alias>
+              <ordinal>11</ordinal>
+              <family>netflix_titles.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8807</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[netflix_titles.csv_72B8CDB50469405CAEF87762AB88B413]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='netflix_titles.csv' id='netflix_titles.csv_72B8CDB50469405CAEF87762AB88B413'>
+            <properties context=''>
+              <relation connection='textscan.1io6n8x1km96rj1076ht20ek0d41' name='netflix_titles.csv' table='[netflix_titles#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='string' name='show_id' ordinal='0' />
+                  <column datatype='string' name='type' ordinal='1' />
+                  <column datatype='string' name='title' ordinal='2' />
+                  <column datatype='string' name='director' ordinal='3' />
+                  <column datatype='string' name='cast' ordinal='4' />
+                  <column datatype='string' name='country' ordinal='5' />
+                  <column datatype='date' date-parse-format='MMMM dd, yyyy' name='date_added' ordinal='6' />
+                  <column datatype='integer' name='release_year' ordinal='7' />
+                  <column datatype='string' name='rating' ordinal='8' />
+                  <column datatype='string' name='duration' ordinal='9' />
+                  <column datatype='string' name='listed_in' ordinal='10' />
+                  <column datatype='string' name='description' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table'>
+                <columns>
+                  <column datatype='date' date-parse-format='MMMM dd, yyyy' name='date_added' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_E41FF3D232AB4B00AAE8DB93216AC4C8]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Sheet 1' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2_860B28C337DF40E1968E04243A689B28]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Sheet 2' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Count of Titles by type</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='netflix_titles' name='federated.1lc4ecr07aixwo1cdso251gwgxl9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lc4ecr07aixwo1cdso251gwgxl9'>
+            <column caption='releasedYear' datatype='integer' name='[Calculation_853713633934471168]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='YEAR([date_added])' />
+            </column>
+            <column-instance column='[title]' derivation='Count' name='[cnt:title:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Count' caption='Date Added' datatype='date' datatype-customized='true' name='[date_added]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_853713633934471168]' derivation='None' name='[none:Calculation_853713633934471168:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[release_year]' derivation='None' name='[none:release_year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column caption='Release Year' datatype='integer' name='[release_year]' role='dimension' type='quantitative' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1lc4ecr07aixwo1cdso251gwgxl9].[Action (Release Year)]'>
+            <groupfilter function='member' level='[none:release_year:ok]' member='2020' user:ui-action-filter='[Action2_860B28C337DF40E1968E04243A689B28]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.1lc4ecr07aixwo1cdso251gwgxl9].[none:Calculation_853713633934471168:qk]' included-values='in-range'>
+            <min>2008</min>
+            <max>2021</max>
+          </filter>
+          <slices>
+            <column>[federated.1lc4ecr07aixwo1cdso251gwgxl9].[none:Calculation_853713633934471168:qk]</column>
+            <column>[federated.1lc4ecr07aixwo1cdso251gwgxl9].[Action (Release Year)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1lc4ecr07aixwo1cdso251gwgxl9].[none:type:nk]' value='291' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#59a14f' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1lc4ecr07aixwo1cdso251gwgxl9].[cnt:title:qk]</rows>
+        <cols>[federated.1lc4ecr07aixwo1cdso251gwgxl9].[none:type:nk]</cols>
+      </table>
+      <simple-id uuid='{9E979732-D327-4617-B748-F9F29CE85EB9}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Titles Released over time&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='netflix_titles' name='federated.1lc4ecr07aixwo1cdso251gwgxl9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lc4ecr07aixwo1cdso251gwgxl9'>
+            <column-instance column='[title]' derivation='Count' name='[cnt:title:qk]' pivot='key' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[release_year]' derivation='None' name='[none:release_year:qk]' pivot='key' type='quantitative' />
+            <column caption='Release Year' datatype='integer' name='[release_year]' role='dimension' type='quantitative' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1lc4ecr07aixwo1cdso251gwgxl9].[Action (Type)]'>
+            <groupfilter function='member' level='[type]' member='&quot;Movie&quot;' user:ui-action-filter='[Action1_51EFDAA807084C4C907814CECAF072FD]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1lc4ecr07aixwo1cdso251gwgxl9].[none:country:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Argentina&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Argentina, Brazil, France, Poland, Germany, Denmark&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Argentina, Chile&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Argentina, Chile, Peru&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Argentina, France&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Argentina, France, United States, Germany, Qatar&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Argentina, Italy&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Argentina, Spain&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Argentina, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Argentina, United States, Mexico&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Argentina, Uruguay, Serbia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Argentina, Uruguay, Spain, France&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Argentina, Venezuela&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Australia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Australia, Armenia, Japan, Jordan, Mexico, Mongolia, New Zealand, Philippines, South Africa, Sweden, United States, Uruguay&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Australia, Canada&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Australia, France&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Australia, France, Ireland&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Australia, Germany&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Australia, India&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Australia, Iraq&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Australia, New Zealand&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Australia, New Zealand, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Australia, United Arab Emirates&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Australia, United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Australia, United Kingdom, Canada&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Australia, United Kingdom, United Arab Emirates, Canada&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Australia, United Kingdom, United States, New Zealand, Italy, France&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Australia, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Austria&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Austria, Czech Republic&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Austria, Germany&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Austria, Iraq, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Austria, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Bangladesh&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Belarus&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Belgium&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Belgium, France&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Belgium, France, Netherlands&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Belgium, Ireland, Netherlands, Germany, Afghanistan&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Belgium, Netherlands&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Belgium, United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Belgium, United Kingdom, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Brazil&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Brazil, France&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Brazil, France, Germany&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Brazil, India, China, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Brazil, Netherlands, United States, Colombia, Austria, Germany&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Brazil, United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Brazil, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Bulgaria&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Bulgaria, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Bulgaria, United States, Spain, Canada&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Cambodia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Cambodia, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Cameroon&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Canada&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Canada, Australia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Canada, Belgium&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Canada, Brazil&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Canada, France&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Canada, France, Italy, Morocco, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Canada, France, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Canada, Germany&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Canada, Germany, France, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Canada, Germany, South Africa&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Canada, Hungary, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Canada, India&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Canada, India, Thailand, United States, United Arab Emirates&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Canada, Ireland, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Canada, Japan, Netherlands&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Canada, Japan, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Canada, Luxembourg&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Canada, Mexico, Germany, South Africa&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Canada, Nigeria&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Canada, Nigeria, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Canada, Norway&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Canada, South Africa&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Canada, South Korea, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Canada, Spain&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Canada, Spain, France&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Canada, United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Canada, United Kingdom, Netherlands&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Canada, United Kingdom, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Canada, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Canada, United States, Cayman Islands&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Canada, United States, Denmark&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Canada, United States, France&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Canada, United States, Germany&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Canada, United States, India, United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Canada, United States, Ireland&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Canada, United States, Mexico&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Canada, United States, United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Canada, United States, United Kingdom, France, Luxembourg&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Chile&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Chile, Argentina&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Chile, Argentina, France, Spain, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Chile, Brazil&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Chile, France&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Chile, Italy&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Chile, Peru&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Chile, Spain, Argentina, Germany&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Chile, United States, France&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;China&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;China, Canada, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;China, Germany, India, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;China, Hong Kong&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;China, Hong Kong, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;China, India, Nepal&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;China, Japan&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;China, Morocco, Hong Kong&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;China, South Korea, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;China, Spain, South Korea, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;China, Taiwan&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;China, United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;China, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;China, United States, Australia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;China, United States, Canada&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;China, United States, United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Colombia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Colombia, Mexico&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Colombia, Mexico, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Colombia, Peru, United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Colombia, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Croatia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Croatia, Slovenia, Serbia, Montenegro&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Cyprus&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Czech Republic, France&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Czech Republic, Slovakia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Czech Republic, United Kingdom, France&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Czech Republic, United Kingdom, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Czech Republic, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Denmark&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Denmark, Brazil, France, Portugal, Sweden&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Denmark, China&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Denmark, France, Belgium, Italy, Netherlands, United States, United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Denmark, France, Poland&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Denmark, France, United States, Sweden&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Denmark, Germany, Belgium, United Kingdom, France&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Denmark, Germany, Belgium, United Kingdom, France, Sweden&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Denmark, Indonesia, Finland, Norway, United Kingdom, Israel, France, United States, Germany, Netherlands&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Denmark, Singapore, Canada, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Denmark, Spain&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Denmark, Sweden, Israel, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Denmark, United Kingdom, South Africa, Sweden, Belgium&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Denmark, United Kingdom, Sweden&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Denmark, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Denmark, Zimbabwe&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Egypt&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Egypt, Algeria&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Egypt, Austria, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Egypt, Denmark, Germany&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Egypt, France&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Egypt, Saudi Arabia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Finland&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Finland, France&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Finland, Germany&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Finland, Germany, Belgium&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Finland, Sweden, Norway, Latvia, Germany&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Finland, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;France&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;France, Algeria&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;France, Australia, Germany&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;France, Belgium&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;France, Belgium, China, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;France, Belgium, Italy&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;France, Belgium, Luxembourg, Cambodia,&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;France, Belgium, Luxembourg, Romania, Canada, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;France, Belgium, Spain&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;France, Belgium, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;France, Brazil, Spain, Belgium&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;France, Canada&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;France, Canada, Belgium&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;France, Canada, China, Cambodia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;France, Canada, Italy, United States, China&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;France, Canada, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;France, Canada, United States, Spain&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;France, China, Japan, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;France, Egypt&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;France, Germany&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;France, Germany, Czech Republic, Belgium&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;France, Germany, Switzerland&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;France, Iran, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;France, Israel, Germany, United States, United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;France, Japan&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;France, Japan, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;France, Lebanon&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;France, Lebanon, United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;France, Luxembourg, Canada&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;France, Luxembourg, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;France, Malta, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;France, Morocco&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;France, Netherlands, Singapore&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;France, Netherlands, South Africa, Finland&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;France, New Zealand&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;France, Norway, Lebanon, Belgium&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;France, Qatar&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;France, Senegal, Belgium&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;France, South Korea, Japan&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;France, South Korea, Japan, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;France, Switzerland, Spain, United States, United Arab Emirates&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;France, United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;France, United Kingdom, India&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;France, United Kingdom, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;France, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;France, United States, Canada&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;France, United States, Mexico&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;France, United States, United Kingdom, Canada&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Georgia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Georgia, Germany, France&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Germany&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Germany, Australia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Germany, Australia, France, China&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Germany, Belgium&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Germany, Canada, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Germany, China, United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Germany, Czech Republic&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Germany, France&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Germany, France, Luxembourg, United Kingdom, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Germany, France, Russia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Germany, France, United States, Canada, United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Germany, Italy&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Germany, Jordan, Netherlands&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Germany, Sri Lanka&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Germany, United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Germany, United Kingdom, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Germany, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Germany, United States, Canada&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Germany, United States, France&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Germany, United States, Hong Kong, Singapore&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Germany, United States, Italy&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Germany, United States, Sweden&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Germany, United States, United Kingdom, Canada&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Ghana&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Ghana, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Greece, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Guatemala&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Hong Kong&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Hong Kong, Canada, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Hong Kong, China&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Hong Kong, China, Singapore&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Hong Kong, China, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Hong Kong, Iceland, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Hong Kong, Taiwan&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Hong Kong, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Hungary&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Hungary, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Iceland&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Iceland, Sweden, Belgium&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;India&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;India, Australia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;India, Canada&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;India, France&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;India, Germany&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;India, Germany, Austria&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;India, Germany, France&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;India, Iran&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;India, Japan&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;India, Malaysia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;India, Mexico&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;India, Nepal&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;India, Pakistan&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;India, Soviet Union&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;India, Switzerland&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;India, Turkey&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;India, United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;India, United Kingdom, Canada, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;India, United Kingdom, China, Canada, Japan, South Korea, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;India, United Kingdom, France, Qatar&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;India, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Indonesia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Indonesia, Netherlands&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Indonesia, Singapore&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Indonesia, South Korea, Singapore&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Indonesia, United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Indonesia, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Iran, France&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Ireland&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Ireland, Canada&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Ireland, Canada, Luxembourg, United States, United Kingdom, Philippines, India&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Ireland, Canada, United Kingdom, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Ireland, Canada, United States, United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Ireland, France, Iceland, United States, Mexico, Belgium, United Kingdom, Hong Kong&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Ireland, Luxembourg, Belgium&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Ireland, South Africa&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Ireland, Switzerland, United Kingdom, France, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Ireland, United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Ireland, United Kingdom, France, Germany&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Ireland, United Kingdom, Greece, France, Netherlands&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Ireland, United Kingdom, Italy, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Ireland, United Kingdom, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Ireland, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Ireland, United States, France&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Ireland, United States, United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Israel&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Israel, Germany&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Israel, Germany, France&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Israel, Germany, Poland, Luxembourg, Belgium, France, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Israel, Sweden, Germany, Netherlands&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Israel, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Italy&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Italy, Belgium&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Italy, Brazil, Greece&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Italy, Canada, France&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Italy, France&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Italy, France, Switzerland&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Italy, Germany&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Italy, India&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Italy, South Africa, West Germany, Australia, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Italy, Switzerland, Albania, Poland&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Italy, Switzerland, France, Germany&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Italy, Turkey&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Italy, United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Italy, United Kingdom, France&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Italy, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Italy, United States, Argentina&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Jamaica, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Japan&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Japan, Canada&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Japan, Canada, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Japan, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Jordan&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Kenya&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Kenya, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Kuwait&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Kuwait, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Lebanon&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Lebanon, Canada, France&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Lebanon, France&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Lebanon, Palestine, Denmark, Qatar&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Lebanon, Qatar&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Lebanon, Syria&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Lebanon, United Arab Emirates&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Lebanon, United Arab Emirates, France, Switzerland, Germany&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Lebanon, United States, United Arab Emirates&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Luxembourg&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Malaysia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Malaysia, Singapore, Hong Kong&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Mauritius&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Mauritius, South Africa&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Mexico&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Mexico, Argentina&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Mexico, Brazil&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Mexico, Finland&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Mexico, France&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Mexico, France, Colombia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Mexico, Netherlands&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Mexico, Spain&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Mexico, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Mexico, United States, Spain, Colombia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Mozambique&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Namibia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Netherlands&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Netherlands, Belgium&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Netherlands, Belgium, Germany, Jordan&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Netherlands, Belgium, United Kingdom, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Netherlands, Denmark, France, Germany&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Netherlands, Denmark, South Africa&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Netherlands, Germany, Denmark, United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Netherlands, Germany, Italy, Canada&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Netherlands, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;New Zealand&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;New Zealand, Australia, France, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;New Zealand, United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;New Zealand, United Kingdom, Australia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;New Zealand, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Nigeria&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Nigeria, United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Norway&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Norway, Denmark&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Norway, Denmark, Netherlands, Sweden&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Norway, Denmark, Sweden&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Norway, Germany&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Norway, Germany, Sweden&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Norway, Iceland, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Norway, Sweden&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Norway, United Kingdom, France, Ireland&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Norway, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Pakistan&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Pakistan, Norway, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Pakistan, United Arab Emirates&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Pakistan, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Paraguay, Argentina&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Peru&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Peru, Germany, Norway&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Peru, United States, United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Philippines&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Philippines, Canada, United Kingdom, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Philippines, Qatar&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Philippines, Singapore&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Philippines, Singapore, Indonesia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Philippines, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Poland&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Poland,&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Poland, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Poland, West Germany&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Portugal, France, Poland, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Portugal, Spain&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Portugal, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Puerto Rico, United States, Colombia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Romania&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Romania, Bulgaria, Hungary&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Romania, France, Switzerland, Germany&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Romania, United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Romania, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Russia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Russia, Poland, Serbia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Russia, Spain&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Russia, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Russia, United States, China&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Saudi Arabia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Saudi Arabia, Netherlands, Germany, Jordan, United Arab Emirates, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Saudi Arabia, Syria, Egypt, Lebanon, Kuwait&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Saudi Arabia, United Arab Emirates&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Senegal&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Serbia, South Korea, Slovenia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Serbia, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Singapore&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Singapore, France&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Singapore, Japan, France&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Singapore, Malaysia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Singapore, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Slovenia, Croatia, Germany, Czech Republic, Qatar&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Somalia, Kenya, Sudan, South Africa, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;South Africa&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;South Africa, Angola&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;South Africa, China, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;South Africa, Germany, Netherlands, France&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;South Africa, Nigeria&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;South Africa, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;South Africa, United States, Germany&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;South Africa, United States, Japan&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;South Africa, United States, New Zealand, Canada&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;South Korea&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;South Korea, Canada, United States, China&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;South Korea, China&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;South Korea, China, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;South Korea, Czech Republic&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;South Korea, France&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;South Korea, Japan&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;South Korea, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Soviet Union, India&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Spain&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Spain, Argentina&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Spain, Belgium&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Spain, Belgium, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Spain, Canada, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Spain, Colombia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Spain, Cuba&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Spain, France&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Spain, France, Canada&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Spain, France, Canada, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Spain, France, Italy&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Spain, France, United Kingdom, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Spain, France, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Spain, France, Uruguay&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Spain, Germany&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Spain, Germany, Denmark, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Spain, Italy&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Spain, Italy, Argentina&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Spain, Mexico&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Spain, Mexico, France&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Spain, Portugal&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Spain, Switzerland&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Spain, Thailand, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Spain, United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Spain, United Kingdom, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Spain, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Sweden&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Sweden, Czech Republic, United Kingdom, Denmark, Netherlands&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Sweden, Netherlands&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Sweden, United Kingdom, Finland&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Sweden, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Switzerland&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Switzerland, France&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Switzerland, France, Belgium, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Switzerland, United Kingdom, Australia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Switzerland, United Kingdom, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Switzerland, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Switzerland, Vatican City, Italy, Germany, France&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Syria, France, Lebanon, Qatar&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Taiwan&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Taiwan, China&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Taiwan, China, France, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Taiwan, Hong Kong, United States, China&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Taiwan, Malaysia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Thailand&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Thailand, Canada, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Thailand, China, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Thailand, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Turkey&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Turkey, Azerbaijan&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Turkey, France, Germany, Poland&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Turkey, India&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Turkey, South Korea&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Turkey, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Ukraine&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Arab Emirates&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Arab Emirates, Jordan&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Arab Emirates, Jordan, Lebanon, Saudi Arabia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Arab Emirates, Romania&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Arab Emirates, United Kingdom, India&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Arab Emirates, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Arab Emirates, United States, United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom,&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Australia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Australia, Canada, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Australia, France&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Australia, France, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Australia, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Belgium&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Belgium, Sweden&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Brazil, Germany&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Canada&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Canada, France, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Canada, Italy&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Canada, Japan&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Canada, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Canada, United States, Cayman Islands&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Canada, United States, Germany&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, China&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, China, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, China, United States, India&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Czech Republic, Germany, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Czech Republic, United States, Germany, Bahamas&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Denmark, Canada, Croatia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Egypt, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Finland, Germany, United States, Australia, Japan, France, Ireland&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, France&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, France, Belgium&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, France, Belgium, Canada, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, France, Belgium, Ireland, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, France, Belgium, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, France, Canada, Belgium, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, France, Germany&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, France, Germany, Spain&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, France, Germany, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, France, Poland, Germany, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, France, Spain, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, France, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, France, United States, Belgium&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, France, United States, Belgium, Luxembourg, China, Germany&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Germany&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Germany, Canada&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Germany, Canada, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Germany, France, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Germany, Spain, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Germany, United Arab Emirates, New Zealand&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Germany, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Germany, United States, France&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Hong Kong&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Hungary, Australia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, India&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, India, Sweden&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, India, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Ireland&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Ireland, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Israel, Russia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Italy&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Italy, Israel, Peru, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Japan&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Japan, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Jordan, Qatar, Iran&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Kenya&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Lithuania&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Malawi&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Namibia, South Africa, Zimbabwe, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, New Zealand&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Nigeria&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Norway, Denmark, Germany, Sweden&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Pakistan&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Poland&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Poland, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Russia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Russia, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Singapore&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, South Africa&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, South Africa, Australia, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, South Africa, France&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, South Korea&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Spain&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Spain, Belgium&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Spain, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Spain, United States, Germany&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Thailand&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, Ukraine, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, United States, Australia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, United States, Canada&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, United States, Czech Republic&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, United States, Dominican Republic&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, United States, France&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, United States, France, Germany&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, United States, France, Italy&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, United States, Germany, Denmark, Belgium, Japan&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, United States, Ireland&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, United States, Japan&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, United States, Morocco&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, United States, Spain, Germany, Greece, Canada&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom, West Germany&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States,&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Argentina&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Australia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Australia, China&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Australia, Mexico&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Australia, Samoa, United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Australia, South Africa, United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Belgium, Canada, France&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Bermuda, Ecuador&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Botswana&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Brazil&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Brazil, India, Uganda, China&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Brazil, Japan, Spain, India&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Brazil, South Korea, Mexico, Japan, Germany&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Bulgaria&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Cambodia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Cambodia, Romania&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Canada&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Canada, Belgium, United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Canada, China&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Canada, France&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Canada, Germany&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Canada, Indonesia, United Kingdom, China, Singapore&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Canada, Ireland&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Canada, Japan, Panama&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Canada, United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Chile&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Chile, Israel&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, China&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, China, Canada&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, China, Colombia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, China, Hong Kong&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, China, United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Colombia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Colombia, Mexico&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Czech Republic&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Czech Republic, United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Denmark&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, East Germany, West Germany&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, France&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, France, Canada&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, France, Canada, Belgium&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, France, Canada, Lebanon, Qatar&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, France, Canada, Spain&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, France, Denmark&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, France, Italy, United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, France, Japan&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, France, Mexico&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, France, Serbia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, France, South Korea, Indonesia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, France, United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, France, United Kingdom, Japan&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Germany&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Germany, Australia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Germany, Canada&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Germany, Mexico&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Germany, United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Germany, United Kingdom, Australia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Germany, United Kingdom, Italy&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Ghana, Burkina Faso, United Kingdom, Germany, Ethiopia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Greece&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Greece, Brazil&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Greece, United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Hong Kong&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Hungary&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Hungary, Ireland, Canada&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Iceland&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, India&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, India, Bangladesh&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, India, France&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, India, South Korea, China&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, India, United Arab Emirates&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, India, United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Indonesia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Ireland&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Ireland, United Kingdom, India&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Israel, Italy, South Africa&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Israel, United Kingdom, Canada&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Italy&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Italy, France, Japan&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Italy, Romania, United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Italy, United Kingdom, Liechtenstein&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Japan&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Japan, Canada&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Kazakhstan&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Malta, France, United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Mexico&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Mexico, Colombia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Mexico, Spain, Malta&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Morocco&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Netherlands, Japan, France&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, New Zealand&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, New Zealand, Japan&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, New Zealand, United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Nicaragua&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Nigeria&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Norway, Canada&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Philippines&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Poland&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Russia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Senegal&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Singapore&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, South Africa&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, South Korea&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, South Korea, China&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, South Korea, Japan&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Spain&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Spain, Germany&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Sweden&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Sweden, Norway&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Switzerland&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Taiwan&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Thailand&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, United Arab Emirates&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, United Kingdom, Australia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, United Kingdom, Canada&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, United Kingdom, Canada, China&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, United Kingdom, Canada, Japan&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, United Kingdom, Denmark, Sweden&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, United Kingdom, France&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, United Kingdom, France, Germany, Japan&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, United Kingdom, Germany&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, United Kingdom, Germany, Hungary&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, United Kingdom, India&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, United Kingdom, Italy&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, United Kingdom, Japan&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, United Kingdom, Morocco&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, United Kingdom, New Zealand&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, United Kingdom, Spain, South Korea&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Uruguay&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States, Venezuela&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Uruguay&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Uruguay, Argentina&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Uruguay, Argentina, Germany, Spain&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Uruguay, Argentina, Spain&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Uruguay, Germany&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Uruguay, Guatemala&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Uruguay, Spain, Mexico&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Venezuela&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Venezuela, Colombia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Vietnam&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;West Germany&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Zimbabwe&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1lc4ecr07aixwo1cdso251gwgxl9].[none:country:nk]</column>
+            <column>[federated.1lc4ecr07aixwo1cdso251gwgxl9].[Action (Type)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <_.fcp.PatternedLineMarks.true...format attr='mark-line-pattern' value='dashed' />
+                <format attr='mark-color' value='#72b966' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1lc4ecr07aixwo1cdso251gwgxl9].[cnt:title:qk]</rows>
+        <cols>[federated.1lc4ecr07aixwo1cdso251gwgxl9].[none:release_year:qk]</cols>
+      </table>
+      <simple-id uuid='{76F59381-60FA-4C51-8634-FB8FD1D1B548}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='49070' id='5' name='Sheet 2' w='97538' x='1231' y='50000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='49070' id='6' name='Sheet 1' w='97538' x='1231' y='930'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='12' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98140' id='11' param='vert' type-v2='layout-flow' w='97538' x='1231' y='930'>
+                <zone fixed-size='280' h='49070' id='6' is-fixed='true' name='Sheet 1' w='97538' x='1231' y='930'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49070' id='5' is-fixed='true' name='Sheet 2' w='97538' x='1231' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{45D2584B-20D9-4CE7-92C0-D0AD7895C679}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='164'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{57BEA357-328C-4892-A5BA-28697B3F3930}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8FCED499-DE11-4863-8A1F-37CA80B86D7A}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 2'>
+          <zoom type='entire-view' />
+          <selection-collection>
+            <tuple-selection>
+              <tuple-reference>
+                <tuple-descriptor>
+                  <pane-descriptor>
+                    <x-fields>
+                      <field>[federated.1lc4ecr07aixwo1cdso251gwgxl9].[none:release_year:qk]</field>
+                    </x-fields>
+                    <y-fields>
+                      <field>[federated.1lc4ecr07aixwo1cdso251gwgxl9].[cnt:title:qk]</field>
+                    </y-fields>
+                  </pane-descriptor>
+                  <columns>
+                    <field>[federated.1lc4ecr07aixwo1cdso251gwgxl9].[cnt:title:qk]</field>
+                    <field>[federated.1lc4ecr07aixwo1cdso251gwgxl9].[none:release_year:qk]</field>
+                  </columns>
+                </tuple-descriptor>
+                <tuple>
+                  <value>461</value>
+                  <value>2020</value>
+                </tuple>
+              </tuple-reference>
+            </tuple-selection>
+          </selection-collection>
+        </viewpoint>
+      </viewpoints>
+      <active id='5' />
+      <simple-id uuid='{ACADFDF4-4149-4BAF-B207-E8A49C82812F}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      hfYkAEJr/wODpzcZUiwwwgAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+      8xRTCaanxg/dx/c4+gQbhnGk/U/Per3j6BN81uf5aeu1NaXucFHMbGJpTnSHk3A4zEo8ypXJ
+      KaqZBJZlyVMhTqGePBXi8NoKgFErUagYeFwu/B6d2NoOl69NEJ+fpyPSLU+FOKV68lSIw2vr
+      EKgVcgh08vXkEOjwpMe7sDUJgLA1CYCwNQmAsDUJgLA1CYCwNQmAsDUJgLA1CYCwNQmAsDUJ
+      gLA1CYCwNQmAsDUJgLA1CYCwNQmAsDUJgLC1trrSWKZBPBalZjkJeSGdLTFyYZCV1S3CXb2M
+      Dp076nYKcSza7BTv5FxvN+t7Oap1xeTYEPfvRrnyt19hOxrFsnqlU/wp1JNO8YfXXqf4apGH
+      C3Emp6ZIbG+wt7dHV08HW5s71E0lneJPqZ50im9j2nYm0l0epibG0HWdS2NjFMo1wh1Bctk0
+      vvPyJDnx7GgvALqTzq6uJ68jbg8A4UhXs0mEOJPkLJCwNQmAsDUJgLA1CYCwNQmAsDUJgLA1
+      CYCwNQmAsDUJgLA1CYCwNQmAsDUJgLA1CYCwNQmAsDUJgLA1CYCwtbYDYBp1DFNhGnVy+SJK
+      KfK5LIZ1LH91VYhj0VaPMGWZLN2/jW/0Ver7URw6ZJweyrhgN8XUhHSLFM+GtgKg6Q4uDA+y
+      q0BzuBno7+LenWWuvXaTrWgUy7LkqRCnUE+eCnF4bT4XqM765j45t4Nej0V0ZYOJyxdYmntE
+      MBiWp0KcUj15KsThaeopN7uPJ9c07Us/H3aFPo4AGIZxpAv7rNc7jgCc9Xl+2npP3ZIvrrBH
+      vfUW4rjJaVBhaxIAYWsSAGFrEgBhaxIAYWsSAGFrEgBhaxIAYWsSAGFrEgBhaxIAcSbtrEf5
+      xZv/l3phnzfeeJMP7sx+4zT1Ypq33nqL6Npuy+/zzAZgdfkRa9uJpsOziW0ezkc5q91zLLPG
+      /bt3yJfrLY2vLIP7dz8lW6w2HWc9tvBHl8lGbIH4RusrRwut4qP336e1Ofi65bkH3Lt/n1yp
+      9rVh54fHCAdcbK/tcv3b38FRK31jvfjSEhMv3iT26GHLbXhGA2ASjJxj8cFdmt0NbmpuvPU9
+      olv5E21Zq6qlEpcmJ/jw9gctjl9kdHKKjz74sMkYJoFwH0sP7jVZJia+jl5ic/cxmlT47JPb
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
