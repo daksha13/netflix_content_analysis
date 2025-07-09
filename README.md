@@ -114,7 +114,7 @@ ORDER BY count DESC;
 
 ## 📊 Python Exploratory Data Analysis
 
-All visuals and analysis logic are inside [`cleaning_normalizing_analysis.ipynb`](./cleaning_normalizing_analysis.ipynb).
+All visuals and analysis logic are inside [`cleaning_normalizing_analysis.ipynb`](notebooks/cleaning_normalizing_analysis.ipynb).
 
 ### Visual Highlights:
 
@@ -142,7 +142,7 @@ All visuals and analysis logic are inside [`cleaning_normalizing_analysis.ipynb`
 
 ## 🗺️ Tableau Dashboard
 
-Tableau file: [`Book1.twb`](./Book1.twb)
+Tableau file: [`Tableau Dashboard.twb`](./Tableau Dashboard.twb)
 
 Published link: *Add your Tableau Public link here*
 
