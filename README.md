@@ -172,8 +172,8 @@ Aspiring Data Analyst passionate about storytelling with data.\
 Experienced in Python, SQL, and BI tools.
 
 - [LinkedIn Profile](https://www.linkedin.com/in/dakshaverma823132/)
-- [Tableau Public](https://public.tableau.com/app/profile/daksha.verma/viz/NetflixMoviesTVShows_17520529412840/Dashboard1)*
-- [GitHub Portfolio](https://github.com/daksha13)*
+- [Tableau Public]([https](https://public.tableau.com/app/profile/daksha.verma/vizzes)
+- [GitHub Portfolio](https://github.com/daksha13)
 
 ---
 
